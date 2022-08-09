@@ -30,6 +30,7 @@ app.get("/api", (req, res) => {
 
 
 const PORT = process.env.PORT || 5000;
+// CONNECTION_URL=mongodb://localhost:27017/
 CONNECTION_URL=process.env.CONNECTION_URL;
 
 
