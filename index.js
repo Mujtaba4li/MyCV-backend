@@ -7,7 +7,7 @@ require("dotenv/config");
 
 // import routes
 // const posts = require("./routes/post");
-const Portfolio=require('./routes/portfolioRoute')
+const Portfolio=require('./routes/PortfolioRoute')
 
 // middleware
 app.use(cors());
@@ -15,7 +15,7 @@ app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 
 //Routes
-app.use("/api/portfolio",portfolio);
+app.use("/api/portfolio",Portfolio);
 
 // Base API
 

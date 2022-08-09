@@ -1,11 +1,10 @@
-const mongoose = require("mongoose");
-const PORTFOLIO_MODEL = require("../models/portfolioModel");
+const PORTFOLIO_MODEL = require("../models/PortfolioModel");
 
 // get request
 const getPortfolio = async (req, res) => {
   try {
     //    res.send("I am get post");
-    //
+    
 
     const getPortfolio = await PORTFOLIO_MODEL.find();
     res.status(200).json(getPortfolio);
@@ -28,6 +27,6 @@ const createPortfolio = (req, res) => {
 
 // export
 module.exports = {
-  getPosts: getPosts,
-  createPost: createPost,
+    getPortfolio: getPortfolio,
+    createPortfolio: createPortfolio,
 };
